@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<sitemap xmlns:xlink="http://www.w3.org/1999/xlink">
+	<!--<website>
+		<home>Home</home>
+		<menu>Menu</menu>
+		<loc>Store Locations</loc>
+		<login>Login</login>
+		<sinup>Sign Up</sinup>
+	</website>
+	<about>
+		<help>Help</help>
+		<ab>About us</ab>
+		<cont>Contact Us</cont>
+		<tc>Terms and Conditions</tc>
+	</about>
+	<essential>
+		<prof>My profile</prof>
+		<pref>Preferences</pref>
+		<cart>My Cart</cart>
+		<hist>My History</hist>
+	</essential>-->
+	<row1>
+		<home>Home</home>
+		<help>Help</help>
+		<prof>My profile</prof>
+	</row1>
+	<row2>
+		<menu>Menu</menu>
+		<ab>About us</ab>
+		<pref>Preferences</pref>
+	</row2>
+	<row3>
+		<loc>Store Locations</loc>
+		<cont>Contact Us</cont>
+		<cart>My Cart</cart>
+	</row3>
+	<row4>
+		<login>Login</login>
+		<tc>Terms and Conditions</tc>
+		<hist>My History</hist>
+	</row4>
+	<row5>
+		<sinup>Sign Up</sinup>
+	</row5>
+</sitemap>

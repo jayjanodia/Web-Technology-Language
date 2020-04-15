@@ -1,0 +1,369 @@
+* {
+    box-sizing : border-box;
+}
+
+html {
+    scroll-behavior: smooth;    /*if browser issue check smooth scroll on w3*/
+}
+
+body {
+    margin : 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    overflow: hidden;
+}
+
+.bg-image {
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img1 { 
+    background-image: url("Supreme_pizza.png"); 
+    background-color: #333;
+    height: 467px;
+    width: auto;
+    margin-top: 50px;
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+    overflow: hidden;
+    background-color: #1a1a1a;
+    /*position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;*/ 
+    /*-webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;*/
+    box-shadow: 3px 10px 17px -1px #262626;
+}
+
+li {
+    /*display: inline;*/
+    float: left;
+    scroll-behavior: smooth;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+    /*background-color: #dddddd;*/
+    /*border-bottom: 3px solid transparent;*/
+}
+
+li a:hover:not(.active) {
+    border-radius: 7px;
+    background-color: #0d0d0d;
+    border-bottom: 3px solid #8B0000;
+}
+
+.active {
+    /*background-color:#8B0000;
+    border-radius: 7px;*/
+    border-bottom: 3px solid #8B0000;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .signin {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1a1a1a;
+    float: right;
+    position: relative;
+    display: inline-block;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.dropdown:hover .signin {
+    background-color: #0d0d0d;
+    /*border-bottom: 3px solid #8b0000;*/
+}
+
+.dropdown-content {
+    float: left;
+    display: none;
+    position: absolute;
+    background-color: #0d0d0d;
+    width: 6.2%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 2%;
+    margin-left: -1%;
+}
+
+.dropdown-content .login_nav{
+    float: none;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content .Register{
+    float: none;
+    color: white;
+    padding: 12px 19px;
+    text-decoration: none;
+    display: block;
+    text-align: left;   
+}
+
+.login_nav:hover{
+    border-radius: 7px;
+    background-color: #0d0d0d;
+    border-bottom: 3px solid #8b0000;
+}
+
+.Register:hover{
+    border-radius: 7px;
+    background-color: #0d0d0d;
+    border-bottom: 3px solid #8b0000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Full width input credentials*/
+input[type=text], input[type=password], input[type=tel] {
+    width: 100%;
+    /*padding: 12px 20px;
+    margin: 8px 0;*/
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+#close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+  
+#close:hover, .close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+}  
+
+.sticky + .container{
+	padding-top: 10px;
+}
+ 
+.clearfix {
+    padding: 16px;
+    border-radius: 8px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+button {
+    background-color: #0d0d0d;
+    border: 1px #0d0d0d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.login {
+    background-color: #8b0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 14px 20px;
+}
+
+.cancelbtn1 {
+    width: 20%;
+    float: right;
+    padding: 16px 20px;
+    background-color: #8B0000;
+}
+
+.container {
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.signupbtn {
+    padding: 16px 20px;
+    width: 80%;
+    background-color: #0d0d0d;
+    border: 1px #0d0d0d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+/*.icon {
+        padding: 10px;
+        background: dodgerblue;
+        color: white;
+        min-width: 50px;
+        text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}*/
+#id02 {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.modal {
+    display: none; /*hidden by default*/
+    position: fixed; /*stay in place*/
+    z-index: 1;
+    left: 0;
+    top: -9.3%;
+    width: 100%;
+    height: 100%;
+    /*overflow: auto;*/ /*enable scrolling*/
+    background-color: rgb(0,0,0); /*fallback color*/
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+    margin-top: 5%;
+    overflow-y: auto;
+}
+
+/*model content box*/
+.modal-content {
+    background-color: #000000;
+    margin: 10% auto 15% auto; /*5% from top, 15% from bottom and centered*/
+    border: 1px solid #000000;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close.focus {
+    color: red;
+    cursor: pointer;
+}
+
+/*Zoom animation*/
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.Location {
+    border: 1px solid black;
+    /*padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;*/
+    padding: 25px 0px 40px 0px;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    /*margin: auto;*/
+    background-color: #1a1a1a;
+    box-shadow: 3px 5px 17px 1px #262626;
+}
+
+#enter_loc {
+    height:50px;
+    float:left;
+    margin-left: 11%;
+    width:80%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+#auto_detect {
+    height: 30px;
+    color:#fff;
+    background-color: #8B0000;
+    font-weight:bold;
+    margin-left:-120px;
+    margin-top: 15px;
+    border: 1px solid #8B0000;
+    border-radius: 5px;
+}
+
+#Menu {
+    
+}
+

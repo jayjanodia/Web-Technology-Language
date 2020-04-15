@@ -1,0 +1,101 @@
+<!DOCTYPE html>  <!--this shows we are using html 5-->
+<html lang = "en-US">
+    <head>
+<!--bootstrap file-->
+            <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
+            <!--http://rebloggy.com/post/gif-art-cute-pizza-illustrator/74655039569-->
+            <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+            <link rel = "title icon" href = "Icon.gif">
+            <title>Pizza Order Application</title>
+            <meta charset = "UTF-8">
+            <meta name = "viewport" content=  "width=device-width, initial-scale = 1, shrink-to-fit=no"> 
+           <link rel = "stylesheet" type = "text/css" href = "style.css">
+    </head>
+    <body>
+        <ul>
+            <li><a class = "active" href = "#home">Home</a></li>
+            <li><a href = "#Menu">Menu</a></li>
+            <li><a href = "#Offer">Offers</a></li>
+            <li><a href = "#stores">Store Locations</a></li>
+            <li><a href = "#aboutus">Contact Us</a></li>
+            <div class = "dropdown">
+                <button class = "signin"><a href = "#sign">Sign In</button>
+                <div class = "dropdown-content">
+                    <button type="button" class="login_nav" onclick = "document.getElementById('id01').style.display='block'">Login</button><br>
+                    <button class="Register" onclick = "document.getElementById('id02').style.display='block'">Sign up</button>
+                </div>
+            </div>
+        </ul>
+        <div id = "id01" class = "modal">
+            <form class="modal-content animate" style="max-width:500px; margin: auto">
+                <h2> Log In</h2>
+                <div class= "container">
+                    <i class = "fa-fa-user icon"></i>
+                    <!--<span class = "glyphicon glyphicon-search"></span>-->
+                    <input class = "input-field" type= "text" placeholder= "Enter Username" name="uname" required>
+                </div>
+                <div class= "container">
+                    <i class = "fa-fa-key icon"></i>
+                    <input class = "input-field" type= "text" placeholder= "Enter Password" name="psw" required>
+                </div>
+                <div class = "container">
+                    <button type= "submit" class = "login" onclick="ValidateEmail(uname)">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember">Remember me
+                    </label>
+                </div>
+                <div class= "container" style = "background-color: #1a1a1a">
+                    <button type= "button" onclick="document.getElementById('id01').style.display = 'none'" class = "cancelbtn">Cancel</button>
+                    <span class = "psw"><a href = "#"> Forgot password?</a></span>
+                </div>
+            </form>
+        </div>
+	    <div id = "id02" class = "modal">
+	        <span onclick="document.getElementById('id02').style.display='none'" id="close" title="Close Modal">&times;</span>
+		    <form class= "modal-content animate" style= "max-width:500px; margin: auto" name="myForm" >
+			    <div class= "container">
+                    <h2>Sign up </h2>
+                    <p> Please fill this form to create an account </p>
+                    <hr>
+                    <label for= "Name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter UserName" name= "Name"
+                    id="Name" required>
+                    <label for= "Phone"><b>Mobile Number*</b></label>
+                    <input type="tel" placeholder="Enter Mobile Number" name="Phone" id="Phone" required>
+				    <label for="email"><b>Email*</b></label>
+				    <input type="text" placeholder="Enter Email" name= "email"
+                    id="email" required>
+				    <label for="psw"><b>Password*</b></label>
+				    <input type="password" placeholder="Enter Password" name= "psw" id="psw" required>
+				    <label for="psw-repeat"><b>Repeat Password*</b></input>
+				    <input type="password" placeholder="Repeat Password" name= "psw-repeat" id= "psw-repeat" required>
+				    <label>
+				    <input type="checkbox" checked="checked" name= "remember" style= "margin-bottom: 15px">Remember me</label>
+				    <p>By creating an account you agree to our <a href="#" style="color: dodgerblue; display: inline; padding: 0 0;">Terms & Privacy</a>.</p>
+                     <div style = "background-color: #1a1a1a">
+                        <input type = "button" value = "Sign up" class= "signupbtn" name="Register" onclick="myAlert()">
+                        <button type= "button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn1">Cancel</button>
+                    </div>
+                    
+                </div>
+               
+                
+	        </form>
+	    </div>
+        
+        <!--<p title = "Tooltip">Trial message</p>--> <!--refer to html attributes-->
+       <form action ="/action_page.php" target="_blank">       <!--read more in html forms-->
+            <div class = "Location">
+                    <input type= "text" name = "location" placeholder= "Enter your location" id = "enter_loc">
+                    <button type = "button" id = "auto_detect" onclick = "alert('Please allow the webpage to allow location cookies to automatically detect your location')">Auto Detect</button><br>
+            </div>
+            <div class ="bg-image img1"></div>
+        </form>
+        <script src = "script.js"></script>
+        <!--bootstrap files-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>

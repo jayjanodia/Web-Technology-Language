@@ -1,0 +1,62 @@
+/*CSS file for xml*/
+body {
+	font-family:'Arial';
+	background-color: #333;
+}
+
+h1 {
+	text-align: center;
+	color: #f5f5dc;
+}
+
+hr {
+	color: gray;
+}
+
+#sitemap {
+		width: 100%;
+}
+
+#sitemap th {
+	padding-top: 10%;
+	padding-left: 11%;
+	color: 	#ffa600;
+	text-align: center;
+	font-size: 1.8em;
+}
+
+a {
+	color: #f5f5dc;
+	text-decoration: none;
+	display:inline-block;
+	margin:0;
+}
+
+a:after {
+	display:block;
+	content: '';
+	border-bottom: 3px solid #8B0000;
+	transform: scaleX(0);  
+	transition: transform 250ms ease-in-out;
+}
+
+a:hover:after {
+	transform: scaleX(1);
+}
+
+a:fromLeft:after {
+	transform-origin:  0% 50%;
+}
+
+#sitemap td {
+	color: #f5f5dc;
+	padding-top: 3%;
+	padding-left: 11%;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#sitemap td:hover {
+	opacity: 0.8;
+}
+

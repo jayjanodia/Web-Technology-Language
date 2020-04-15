@@ -1,0 +1,26 @@
+.btn {
+    margin: 6px;
+}
+.calc {
+    margin: auto;
+    height: auto;
+    width: 20%;
+    border: grey solid 6px;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+h2 {
+		color: white;
+}
+
+#first, #second {
+	background-color: black;
+	color: white;
+}
+
+#first:hover, #second:hover {
+	background-color: white;
+	color: black;
+}
